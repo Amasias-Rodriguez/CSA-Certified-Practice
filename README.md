@@ -13,4 +13,3 @@ The goal is to simulate real SOC workflows using virtual machines (Kali Linux an
 - **Kali Linux** → Analyst/attacker machine  
 - **Metasploitable / Additional VM** → Target/victim machine  
 
-Both VMs are connected
