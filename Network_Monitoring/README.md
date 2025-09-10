@@ -18,4 +18,13 @@
 - 5353 = test port
   # Capture [udp2.png]
   - Sending an UDP message with command: echo "Hello from Kali UDP test" | nc -u 192.168.56.102 5353
-
+# HTTP Requests in plain text
+# Capture [httpserver.png]
+- Setting up a simple HTTP server on port 80 with command: sudo python3 -m http.server 80
+# Capture [startserver.png] 
+- Starting a traffic capture with command: sudo tcpdump -i eth1 tcp port 80 -A
+- tcp port 80 = filter HTTP traffic
+- -A = showing ASCII content (useful to read headers and the HTML)
+# Capture [curlhttp.png]
+- Making an HTTP petition to the server in the vm lab with command: curl http://192.56.102
+  
