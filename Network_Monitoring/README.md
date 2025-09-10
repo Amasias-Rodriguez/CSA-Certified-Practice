@@ -12,3 +12,10 @@
 # Capture [udp.png]
 - Traffic UDP (DNS query)
 - Using command: sudo tcpdump -i eth1 udp port 5353 -vv
+# Capture [udp1.png] - Capturing UDP Traffic with netcat
+- -u = activate UDP mode
+- -l = listen in that port
+- 5353 = test port
+  # Capture [udp2.png]
+  - Sending an UDP message with command: echo "Hello from Kali UDP test" | nc -u 192.168.56.102 5353
+
